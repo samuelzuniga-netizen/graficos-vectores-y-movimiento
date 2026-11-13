@@ -2,9 +2,9 @@
 
 ## Sesión
 
-- Número de práctica:
-- Commit o rama:
-- Datos del mock utilizados:
+- Número de práctica: Vectores y movimiento
+- Commit o rama: feat: error-practica vectores y movimiento
+- Datos del mock utilizados: datos/mock-request.json (flores F1 = (2, 2) y F2 = (5, 6)) y datos/mock-response.json (ruta [1, 2], velocidad 2 u/s, dirección (0.6, 0.8))
 
 ## Pruebas
 
@@ -16,11 +16,11 @@
 
 ## Error documentado
 
-1. Intento:
-2. Evidencia:
-3. Causa:
-4. Corrección:
-5. Explicación:
+1. Intento: quitar dt de la linea 15 de Matematicas2D.cs
+2. Evidencia: el agente llega demasiado rapido
+3. Causa: sin dt, el paso de 2u por cuadrado paso de 60 FPS a 120 FPS, 
+4. Corrección: Restaurar MathF.Min(MathF.Max(0, rapidez) * MathF.Max(0, dt), distancia)
+5. Explicación: la rapidez esta en u/s al multiplicarlo por dt da una distancia para ese cuadro 
 
 ## Datos del proyecto final
 
