@@ -18,7 +18,7 @@
 
 1. Intento: quitar dt de la linea 15 de Matematicas2D.cs
 2. Evidencia: el agente llega demasiado rapido
-3. Causa: sin dt, el paso de 2u por cuadrado paso de 60 FPS a 120 FPS, 
+3. Causa: sin dt, el paso es 2 u por cuadro; a 60 FPS eso da 120 u/s en lugar de 2 u/s. 
 4. Corrección: Restaurar MathF.Min(MathF.Max(0, rapidez) * MathF.Max(0, dt), distancia)
 5. Explicación: la rapidez esta en u/s al multiplicarlo por dt da una distancia para ese cuadro 
 
