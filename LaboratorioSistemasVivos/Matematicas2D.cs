@@ -12,7 +12,7 @@ internal static class Matematicas2D
         float distancia = d.Length();
         if (distancia <= 0.0001f) return objetivo;
         Vector2 direccion = d / distancia;
-        float paso = MathF.Min(MathF.Max(0, rapidez) * MathF.Max(0, dt), distancia);
+        float paso = MathF.Min(MathF.Max(0, rapidez) * MathF.Max(0, ), distancia);
         return posicion + direccion * paso;
     }
 
