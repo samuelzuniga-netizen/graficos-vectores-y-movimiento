@@ -210,7 +210,7 @@ internal static class Program
     private static void DibujarMatrices()
     {
         Vector2[] originales = { new(1, 2), new(0, 0), new(-1, 2) };
-        float[,] matriz = identidad ? Identidad() : new float[,] { { 2, 0, 3 }, { 0, 1, -1 }, { 0, 0, 1 } };
+        float[,] matriz = identidad ? Identidad() : new float[,] { { 2, 0, 3 }, { 0, 2, -1 }, { 0, 0, 1 } };
         Poligono(originales, Identidad(), AnclaVisual, Color.Gray);
         Poligono(originales, matriz, AnclaVisual, Color.DarkBlue);
         Vector2 nuevo = AplicarPunto(matriz, originales[0]);
